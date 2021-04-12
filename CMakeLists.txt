@@ -26,5 +26,5 @@ else()
   message(FATAL_ERROR "Platform not recognized (neither Linux nor Windows nor Darwin)")
 endif()
 
-add_executable(example example.c)
+add_executable(example EXCLUDE_FROM_ALL example.c)
 target_link_libraries(example tray)
